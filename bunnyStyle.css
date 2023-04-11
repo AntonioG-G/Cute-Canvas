@@ -1,0 +1,48 @@
+body{
+	background-color: #FFB7C5;
+}
+.texto{
+	font-family: "Comic Sans MS";
+	font-size: 65px;
+	word-spacing: 2px;
+	color: #EDEDED;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	text-align: center;
+	text-shadow: 4px 3px 0px #7A7A7A;
+	text-shadow: 5px 3px 0px #7A7A7A;
+	text-shadow: 6px 3px 0px #7A7A7A;
+}
+
+.texto2{
+	font-family: "Comic Sans MS";
+	font-size: 28px;
+	word-spacing: 2px;
+	color: #EDEDED;
+	font-weight: 700;
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	text-align: center;
+	text-shadow: 4px 3px 0px #7A7A7A;
+	text-shadow: 5px 3px 0px #7A7A7A;
+	text-shadow: 6px 3px 0px #7A7A7A;
+}
+
+.canvas-container{
+	background-color: white;
+	display:flex;
+	height: 900px;
+	width: 900px;
+	margin:0 auto;
+	-webkit-box-shadow: inset -1px 3px 8px 5px #DB002C, 2px 5px 16px 0px #DB002C, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: inset -1px 3px 8px 5px #DB002C, 2px 5px 16px 0px #DB002C, 5px 5px 15px 5px rgba(0,0,0,0);
+	justify-content: center;
+	align-content: center;
+}
+
+.cuadro1{
+	margin:auto;
+}
