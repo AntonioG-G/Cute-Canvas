@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Just a cute canvas</title>
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+
+	<body>
+		<h1 class="texto">Solo un lienzo bonito</h1>
+		<h5 style="font-size: 30px;" class="texto">Presiona CTRL+R Para limpiar el lienzo</h5>
+		<div class="todo">
+			<div class="canvas-container">
+				<canvas width="800" height="800" class="cuadro1">
+
+				<script>
+					var canvas = document.querySelector("canvas");
+					var contexto = canvas.getContext("2d");
+
+					var presionado = false;
+
+					canvas.addEventListener("mousedown", function(event) {
+						presionado = true;
+						contexto.beginPath();
+					});
+
+					canvas.addEventListener("mouseup", function() {
+		  				presionado = false;
+		  			});
+
+					canvas.addEventListener("mousemove", function(event){
+						if (presionado==true) {
+
+							contexto.lineWidth = 10;
+					        contexto.lineCap = "round";
+					        contexto.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+					        contexto.stroke();
+					        contexto.beginPath();
+					        contexto.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+						}
+					});
+				</script>
+				</canvas>
+			</div>
+
+			<div class="buttonNtext">
+				<h5 style="font-size: 30px;" class="texto">Selecciona tu color</h5>
+				<div class="button-container">
+					
+					
+					<button id="red">Rojo</button>
+		      		<button id="blue">Azul</button>
+				    <button id="green">Verde</button>
+				    <button id="yellow">Amarillo</button>
+				    <button id="orange">Naranja</button>
+				    <button id="black">Negro</button>
+				    <button id="purple">Morado</button>
+				    <button id="lightgreen">Lima</button>
+				    <button id="lightblue">Celeste</button>
+
+				    <script type="text/javascript">
+				    	var redBtn = document.getElementById("red");
+						var blueBtn = document.getElementById("blue");
+						var greenBtn = document.getElementById("green");
+						var yellowBtn = document.getElementById("yellow");
+						var orangeBtn = document.getElementById("orange");
+						var blackBtn = document.getElementById("black");
+						var purpleBtn = document.getElementById("purple");
+						var lightgreenBtn = document.getElementById("lightgreen");
+						var lightblueBtn = document.getElementById("lightblue");
+
+						redBtn.addEventListener("click", function() {
+					    	contexto.strokeStyle = "red";
+						});
+
+						blueBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "blue";
+						});
+
+						greenBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "green";
+						});
+
+						yellowBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "yellow";
+						});
+
+						orangeBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "orange";
+						});
+
+						blackBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "black";
+						});
+
+						purpleBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "purple";
+						});
+
+						lightgreenBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "lightgreen";
+						});
+						lightblueBtn.addEventListener("click", function() {
+						    contexto.strokeStyle = "lightblue";
+						});
+				    </script>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
+
