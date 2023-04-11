@@ -1,6 +1,76 @@
 body{
 	background-color: #FFB7C5;
 }
+button{
+	width: 150px;
+    height: 100px;
+    margin: 5px;
+    box-shadow: 3px 4px 3px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:16px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Comic Sans MS;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 25px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+button:hover{
+	border: 3px solid black;
+}
+
+#red{
+	background:linear-gradient(to bottom, #ededed 5%, red 100%);
+	background-color:#ededed;
+}
+
+#blue{
+	background:linear-gradient(to bottom, #ededed 5%, blue 100%);
+	background-color:#ededed;
+}
+
+#green{
+	background:linear-gradient(to bottom, #ededed 5%, green 100%);
+	background-color:#ededed;
+}
+
+#yellow{
+	background:linear-gradient(to bottom, #ededed 5%, yellow 100%);
+	background-color:#ededed;
+}
+
+#orange{
+	background:linear-gradient(to bottom, #ededed 5%, orange 100%);
+	background-color:#ededed;
+}
+
+#black{
+	background:linear-gradient(to bottom, #ededed 5%, black 100%);
+	background-color:#ededed;
+}
+
+#purple{
+	background:linear-gradient(to bottom, #ededed 5%, purple 100%);
+	background-color:#ededed;
+}
+
+#lightgreen{
+	background:linear-gradient(to bottom, #ededed 5%, lightgreen 100%);
+	background-color:#ededed;
+}
+
+#lightblue{
+	background:linear-gradient(to bottom, #ededed 5%, lightblue 100%);
+	background-color:#ededed;
+}
+
 .texto{
 	font-family: "Comic Sans MS";
 	font-size: 65px;
@@ -8,39 +78,43 @@ body{
 	color: #EDEDED;
 	font-weight: 700;
 	font-style: normal;
-	font-variant: small-caps;
+	font-variant: smal    l-caps;
 	text-transform: capitalize;
 	text-align: center;
 	text-shadow: 4px 3px 0px #7A7A7A;
 	text-shadow: 5px 3px 0px #7A7A7A;
 	text-shadow: 6px 3px 0px #7A7A7A;
 }
+.todo{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	height: 1000px;
+	
 
-.texto2{
-	font-family: "Comic Sans MS";
-	font-size: 28px;
-	word-spacing: 2px;
-	color: #EDEDED;
-	font-weight: 700;
-	font-style: normal;
-	font-variant: small-caps;
-	text-transform: capitalize;
-	text-align: center;
-	text-shadow: 4px 3px 0px #7A7A7A;
-	text-shadow: 5px 3px 0px #7A7A7A;
-	text-shadow: 6px 3px 0px #7A7A7A;
 }
-
 .canvas-container{
 	background-color: white;
 	display:flex;
 	height: 900px;
 	width: 900px;
-	margin:0 auto;
+	margin: 40px;
 	-webkit-box-shadow: inset -1px 3px 8px 5px #DB002C, 2px 5px 16px 0px #DB002C, 5px 5px 15px 5px rgba(0,0,0,0); 
 	box-shadow: inset -1px 3px 8px 5px #DB002C, 2px 5px 16px 0px #DB002C, 5px 5px 15px 5px rgba(0,0,0,0);
-	justify-content: center;
-	align-content: center;
+	
+}
+.button-container{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    /*align-items: center;*/
+	height: 900px;
+	width: 520px;
+}
+.buttonNtext{
+
 }
 
 .cuadro1{
