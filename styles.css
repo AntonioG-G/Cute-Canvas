@@ -14,12 +14,12 @@ button{
 	cursor:pointer;
 	color:white;
 	font-family:Comic Sans MS;
-	font-size:17px;
+	font-size:22px;
 	font-weight:bold;
 	padding:7px 25px;
 	text-align: center;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
+	text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
 }
 
 button:hover{
@@ -29,6 +29,7 @@ button:hover{
 #red{
 	background:linear-gradient(to bottom, #ededed 5%, red 100%);
 	background-color:#ededed;
+
 }
 
 #blue{
@@ -61,9 +62,9 @@ button:hover{
 	background-color:#ededed;
 }
 
-#lightgreen{
-	background:linear-gradient(to bottom, #ededed 5%, lightgreen 100%);
-	background-color:#ededed;
+#pink{
+	background:linear-gradient(to bottom, #ededed 5%, pink 100%);
+	background-color:pink;
 }
 
 #lightblue{
