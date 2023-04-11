@@ -37,10 +37,15 @@
 
 							contexto.lineWidth = 10;
 					        contexto.lineCap = "round";
-					        contexto.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-					        contexto.stroke();
-					        contexto.beginPath();
-					        contexto.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+					        var x = event.pageX - canvas.offsetLeft;
+						    var y = event.pageY - canvas.offsetTop;
+						    contexto.lineTo(x, y);
+						    contexto.stroke();
+						    contexto.beginPath();
+						    contexto.moveTo(x, y);
+						    console.log(event.clientX, event.clientY)
+						    console.log(canvas.offsetLeft, canvas.offsetTop)
+						    console.log(x,y)
 						}
 					});
 				</script>
